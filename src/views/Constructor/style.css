@@ -1,0 +1,8 @@
+.constructor {
+  /* display: flex;
+  align-items: flex-start; */
+}
+.constructor__inner {
+  display: flex;
+  align-items: flex-start;
+}

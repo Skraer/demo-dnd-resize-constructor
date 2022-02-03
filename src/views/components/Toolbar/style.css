@@ -1,0 +1,29 @@
+.toolbar {
+  padding: 20px;
+}
+
+.toolbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar-row + .toolbar-row {
+  margin-top: 15px;
+}
+
+.toolbar-row__title {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.toolbar-row__checkbox {
+
+}
+.toolbar-row__buttons {
+  /* display: flex; */
+}
+
+.btn {
+  flex-basis: 40%;
+}
+

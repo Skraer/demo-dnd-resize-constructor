@@ -1,0 +1,88 @@
+.template-wrapper {
+  /* margin: auto; */
+  border: 1px solid #ccc;
+  height: calc(297px * 3);
+  width: calc(210px * 3);
+}
+
+.template {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.drag-item {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drag-item:hover {
+  border: 1px dashed #ccc;
+}
+
+.drag-item:hover [class^="drag-item__resizer"], 
+.drag-item:hover .drag-item__dragger {
+  display: block;
+}
+
+
+.drag-item__dragger {
+  display: none;
+  cursor: move;
+
+  position: absolute;
+  width: 60%;
+  height: 20px;
+  background-color: rgb(203, 201, 201);
+  border: 1px solid rgb(103, 103, 103);
+
+  border-radius: 5px;
+  top: -10px;
+  left: 20%;
+}
+
+[class^="drag-item__resizer"] {
+  display: none;
+  position: absolute;
+  background-color: rgb(203, 201, 201);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+[class^="drag-item__resizer"].resize {
+  transform: scale(3);
+}
+
+.drag-item__resizer-right {
+  right: -5px;
+  top: calc(50% - 5px);
+  cursor: e-resize;
+}
+.drag-item__resizer-left {
+  cursor: e-resize;
+  left: -5px;
+  top: calc(50% - 5px);
+}
+.drag-item__resizer-bottom {
+  bottom: -5px;
+  left: calc(50% - 5px);
+  cursor: n-resize;
+}
+
+.drag-item.react-draggable-dragging {
+  border: 1px solid rgb(162, 158, 158);
+}
+
+
+.constructor {
+  padding-bottom: 50px;
+}

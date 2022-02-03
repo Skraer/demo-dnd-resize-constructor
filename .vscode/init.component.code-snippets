@@ -1,0 +1,17 @@
+{
+	"Init component": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "init.component",
+		"body": [
+			"import React from 'react'",
+			"import './style.css'",
+			"",			
+			"const ${1:Component}: React.${2:FC} = () => {",
+			"  return <div>$0</div>",
+			"}",
+			"",
+			"export default ${1:Component}"
+		],
+		"description": "Init base component"
+	}
+}
